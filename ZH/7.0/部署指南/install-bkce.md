@@ -17,6 +17,7 @@ yum install -y jq unzip uuid
 >**注意**
 >
 >CentOS 7 在 **`epel`源** 提供了 `jq-1.6`。如果提示 `No package jq available.`，请先确保 **`epel`源** 可用。
+>Ubuntu中 `apt install -y jq uuid`
 
 ## 在中控机配置 ssh 免密登录
 本文中会提供命令片段方便您部署。部分命令片段会从中控机上调用 `ssh` 在 k8s node 上执行远程命令，所以需提前配置免密登录。
